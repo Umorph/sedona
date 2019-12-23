@@ -22,7 +22,43 @@
     <main>
         <section class="filter">
             <h2>Фильтры для поиска гостиницы</h2>
-            <!-- Здесь будет форма -->
+            <form class="filter" action="https://echo.htmlacademy.ru" method="GET">
+                <fieldset>
+                    <legend>Инфраструктура</legend>
+                    <p class="filter-item">
+                        <input id="filter_pool" type="checkbox" name="pool" checked>
+                        <label for="filter_pool">Бассейн</label>
+                    </p>
+                    <p class="filter-item">
+                        <input id="filter_parking" type="checkbox" name="parking">
+                        <label for="filter_parking">Парковка</label>
+                    </p>
+                    <p class="filter-item">
+                        <input id="filter_wifi" type="checkbox" name="wifi">
+                        <label for="filter_wifi">WI-FI</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Тип жилья:</legend>
+                    <p class="filter-item">
+                        <label for="filter_hotel">Гостиница</label>
+                        <input id="filter_hotel" type="checkbox" name="hotel">
+                    </p>
+                    <p class="filter-item">
+                        <label for="filter_motel">Модель</label>
+                        <input id="filter_motel" type="checkbox" name="motel">
+                    </p>
+                    <p class="filter-item">
+                        <label for="filter_apartments">Апартаменты</label>
+                        <input id="filter_apartments" type="checkbox" name="apartments">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Стоимость в сутки (Р):</legend>
+                    <input type="range">
+                    <!-- Допилить нормальный range через js -->
+                </fieldset>
+            </form>
         </section>
         <section class="catalog">
             <h2 class="visually-hidden">Каталог гостиниц в Седоне</h2>
