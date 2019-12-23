@@ -22,7 +22,43 @@
     <main>
         <section class="filter">
             <h2>Фильтры для поиска гостиницы</h2>
-            <!-- Здесь будет форма -->
+            <form class="filter" action="https://echo.htmlacademy.ru" method="GET">
+                <fieldset>
+                    <legend>Инфраструктура</legend>
+                    <p class="filter-item">
+                        <input id="filter_pool" type="checkbox" name="pool" checked>
+                        <label for="filter_pool">Бассейн</label>
+                    </p>
+                    <p class="filter-item">
+                        <input id="filter_parking" type="checkbox" name="parking">
+                        <label for="filter_parking">Парковка</label>
+                    </p>
+                    <p class="filter-item">
+                        <input id="filter_wifi" type="checkbox" name="wifi">
+                        <label for="filter_wifi">WI-FI</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Тип жилья:</legend>
+                    <p class="filter-item">
+                        <label for="filter_hotel">Гостиница</label>
+                        <input id="filter_hotel" type="checkbox" name="hotel">
+                    </p>
+                    <p class="filter-item">
+                        <label for="filter_motel">Модель</label>
+                        <input id="filter_motel" type="checkbox" name="motel">
+                    </p>
+                    <p class="filter-item">
+                        <label for="filter_apartments">Апартаменты</label>
+                        <input id="filter_apartments" type="checkbox" name="apartments">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Стоимость в сутки (Р):</legend>
+                    <input type="range">
+                    <!-- Допилить нормальный range через js -->
+                </fieldset>
+            </form>
         </section>
         <section class="catalog">
             <h2 class="visually-hidden">Каталог гостиниц в Седоне</h2>
@@ -74,9 +110,9 @@
                     <figure>
                         <img src="#" alt="Villas at Poco Diablo">
                         <figcaption>
-                            <h3></h3>
-                            <span></span>
-                            <span></span>
+                            <h3>Villas at Poco diablo</h3>
+                            <span>Мотель</span>
+                            <span>от 2000 Р.</span>
                             <button class="button btn-details" type="button">Подробнее</button>
                             <button class="button btn-book" type="button">Забронировать</button>
                         </figcaption>
@@ -111,7 +147,29 @@
     </footer>
     <section class="modal">
         <h2 class="visually-hidden">Найти подходящую гостиницу</h2>
-        <!-- Здесь будет форма -->
+        <form class="modal-search" action="https://echo.htmlacademy.ru" method="POST">
+            <p class="modal-input">
+                <label for="modal_income">Дата заезда:</label>
+                <input id="modal_income" type="text" name="income" placeholder="24 апреля 2017">
+            </p>
+            <p class="modal-input">
+                <label for="modal_outcome">Дата выезда:</label>
+                <input id="modal_outcome" type="text" name="outcome" placeholder="4 июля 2017">
+            </p>
+            <p class="modal-input">
+                <label for="modal_adults">Взрослые:</label>
+                <button class="button-down" type="button">-</button>
+                <input id="modal_adults" type="text" name="adults" value="0">
+                <button class="button-up" type="button">+</button>
+            </p>
+            <p class="modal-input">
+                <label for="modal_kids">Дети:</label>
+                <button class="button-down" type="button">-</button>
+                <input id="modal_kids" type="text" name="adults" value="0">
+                <button class="button-up" type="button">+</button>
+            </p>
+            <button class="button" type="submit">Найти</button>
+        </form>
     </section>
 </body>
 </html>
