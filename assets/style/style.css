@@ -37,6 +37,7 @@ a {
 
 .navigation-list {
     list-style: none;
+    padding: 0;
 }
 
 .navigation-item a {
@@ -123,4 +124,14 @@ a {
 
 .social-item {
     background-color: #81b3d2;
+}
+
+/* Modal */
+
+.modal-search label {
+    font-weight: 700;
+    line-height: 26px;
+    color: #000000;
+
+    background-color: #ffffff;
 }
