@@ -126,6 +126,29 @@ a {
     background-color: #81b3d2;
 }
 
+/* filter */
+
+.filter {
+    background-color: #81b3d2;
+    background-image: url("../img/filter-bg.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.filter fieldset {
+    border: none;
+}
+
+.filter legend {
+    font-weight: 700;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.filter-item label {
+    color: #ffffff;
+}
+
 /* Modal */
 
 .modal-search label {
