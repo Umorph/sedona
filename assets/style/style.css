@@ -24,3 +24,16 @@ a {
     margin: -1px;
 }
 
+/* main-header */
+
+.navigation-list {
+    list-style: none;
+}
+
+.navigation-item a {
+    font-weight: 700;
+    line-height: 26px;
+    color: #000000;
+
+    background-color: #ffffff;
+}
