@@ -24,6 +24,15 @@ a {
     margin: -1px;
 }
 
+.button {
+    font-weight: 700;
+    line-height: 26px;
+    font-size: 21px;
+    color: #ffffff;
+
+    background-color: #766357;
+}
+
 /* main-header */
 
 .navigation-list {
@@ -75,4 +84,19 @@ a {
     color: #ffffff;
 
     background-color: #81b3d2;
+}
+
+/* main map */
+
+.main-map h2 {
+    font-weight: 700;
+    line-height: 36px;
+    font-size: 30px;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.main-map p {
+    line-height: 24px;
 }
