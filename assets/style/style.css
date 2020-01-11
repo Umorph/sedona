@@ -100,3 +100,27 @@ a {
 .main-map p {
     line-height: 24px;
 }
+
+/* Футер */
+
+.main-footer p {
+    font-weight: 700;
+    line-height: 26px;
+    font-size: 21px;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.social-list {
+    list-style: none;
+    padding: 0;
+}
+
+.copyright span {
+    line-height: 26px;
+}
+
+.social-item {
+    background-color: #81b3d2;
+}
