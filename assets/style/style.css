@@ -37,3 +37,42 @@ a {
 
     background-color: #ffffff;
 }
+
+/* Преимущества */
+
+.advantages-title {
+    font-weight: 700;
+    line-height: 26px;
+    font-size: 21px;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.advantages-list,
+.services-list {
+    list-style: none;
+    padding: 0;
+}
+
+.advantages-item:first-child,
+.advantages-item:nth-child(2) {
+    background-color: #81b3d2;
+}
+
+.advantages-item h3,
+.services-item h3 {
+    font-weight: 700;
+    line-height: 21px;
+    font-size: 21px;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.advantages-item:first-child h3,
+.advantages-item:nth-child(2) h3 {
+    color: #ffffff;
+
+    background-color: #81b3d2;
+}
