@@ -40,9 +40,15 @@ a {
     padding: 0;
 }
 
-.navigation-item a {
+.navigation-item {
     font-weight: 700;
     line-height: 26px;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.navigation-item a {
     color: #000000;
 
     background-color: #ffffff;
@@ -148,6 +154,15 @@ a {
 .filter-item label {
     color: #ffffff;
 }
+
+/* Catalog */
+
+ .sort-type-list,
+ .sort-direction-list,
+ .catalog-list {
+     list-style: none;
+     padding-left: 0;
+ }
 
 /* Modal */
 
