@@ -143,6 +143,14 @@ input[type="radio"].visually-hidden {
     list-style: none;
 }
 
+.advantages-item {
+    min-height: 256px;
+}
+
+.advantages-item:not(.item-big):not(.item-list) {
+    background-color: #eeeeee;
+}
+
 .item-big {
     display: flex;
     flex-flow: wrap row-reverse;
@@ -175,8 +183,6 @@ input[type="radio"].visually-hidden {
     line-height: 21px;
     font-size: 21px;
     color: #000000;
-
-    background-color: #ffffff;
 }
 
 .item-big h3 {
