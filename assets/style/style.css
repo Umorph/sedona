@@ -46,9 +46,11 @@ input[type="radio"].visually-hidden {
     font-weight: 700;
     line-height: 26px;
     font-size: 21px;
+    text-transform: uppercase;
     color: #ffffff;
 
     background-color: #766357;
+    border: none;
 }
 
 /* main-header */
@@ -279,7 +281,19 @@ input[type="radio"].visually-hidden {
 
 /* main map */
 
+.map-text-wrapper {
+    margin: 0 auto;
+    padding: 0;
+    width: 570px;
+
+    text-align: center;
+}
+
 .main-map h2 {
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+
     font-weight: 700;
     line-height: 36px;
     font-size: 30px;
@@ -289,7 +303,24 @@ input[type="radio"].visually-hidden {
 }
 
 .main-map p {
+    margin: 0;
+    margin-top: 24px;
+    padding: 0;
+
     line-height: 24px;
+}
+
+.button-modal {
+    width: 100%;
+    min-height: 86px;
+    margin: 0;
+    margin-top: 47px;
+    padding: 0;
+}
+
+.main-map img {
+    width: 100%;
+    height: auto;
 }
 
 /* Футер */
