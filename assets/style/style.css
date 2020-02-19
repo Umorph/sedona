@@ -407,29 +407,93 @@ input[type="radio"].visually-hidden {
     background-repeat: no-repeat;
 }
 
-.filter fieldset {
+.filter-form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 27px;
+    padding-bottom: 21px;
+    width: 1056px;
+}
+
+.filter-checkbox {
+    margin: 0;
+    padding: 0;
+    min-width: 257px;
+
     border: none;
 }
 
-.filter legend {
+.filter-checkbox:nth-child(2) {
+    margin-right: 224px;
+}
+
+.filter-checkbox-title{
     font-weight: 700;
     font-size: 16px;
     color: #ffffff;
 }
 
-.filter-item label {
+.filter-item {
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+    padding-top: 25px;
+    padding-left: 40px;
+}
+
+.filter-checkbox-label {
     color: #ffffff;
+
+    cursor: pointer;
+}
+
+.filter-checkbox-label::before {
+    content: "";
+    position: absolute;
+    top: 23px;
+    left: 0;
+
+    display: block;
+    width: 23px;
+    height: 23px;
+
+    background-image: url("../svg/checkbox-off.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+}
+
+.filter-checkbox-input:checked + .filter-checkbox-label::after {
+    content: "";
+    position: absolute;
+    top: 23px;
+    left: 0;
+
+    display: block;
+    width: 27px;
+    height: 23px;
+
+    background-image: url("../svg/checkbox-on.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
 }
 
 .filter-range {
-    width: 330px;
+    margin: 0;
+    padding: 0;
+    width: 318px;
 
     color: #ffffff;
     text-transform: uppercase;
+
+    border: none;
 }
 
 .filter-range-title {
-    margin-bottom: 9px;
+    margin-bottom: 10px;
 
     font-weight: 600;
     font-size: 16px;
@@ -439,10 +503,8 @@ input[type="radio"].visually-hidden {
 .price-controls {
     position: relative;
 
-    height: 36px;
+    height: 32px;
     margin-bottom: 20px;
-
-    font-size: 0;
 
     border: 2px solid #ffffff;
     border-radius: 2px;
@@ -461,29 +523,32 @@ input[type="radio"].visually-hidden {
     transform: translate(-50%, -50%);
 }
 
-.price-controls label {
-    display: inline-block;
+.price-controls .min-price,
+.price-controls .max-price {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    padding-left: 65px;
+    width: 90px;
 
     font-size: 14px;
     line-height: 38px;
-    vertical-align: top;
+    color: #ffffff;
 
     cursor: pointer;
+    transform: translateY(-4px);
 }
 
-.price-controls .min-price,
 .price-controls .max-price {
-    width: 90px;
-    padding-left: 65px;
-
-    color: #ffffff;
+    padding-left: 57px;
 }
 
 .price-controls input {
     width: 50px;
     margin: 0;
 
-    color: #ffffff;
+    color: inherit;
     font: inherit;
 
     background: none;
@@ -538,7 +603,7 @@ input[type="radio"].visually-hidden {
 .btn-transparent {
     display: block;
     margin: 0 auto;
-    padding: 6px 35px;
+    padding: 6px 34px;
 
     font-size: 14px;
     line-height: 20px;
@@ -549,6 +614,7 @@ input[type="radio"].visually-hidden {
     border: 2px solid #ffffff;
     border-radius: 2px;
     cursor: pointer;
+    transform: translateX(-5px);
 }
 
 .btn-transparent:hover {

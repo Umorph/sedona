@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="assets/style/normalize.css">
     <link rel="stylesheet" href="assets/style/style.css">
+    <!-- Временно для сетки -->
+    <link rel="stylesheet" href="assets/style/outline.css">
     <title>Sedona | Найти гостиницу</title>
 </head>
 <body class="inner-page">
@@ -25,52 +27,54 @@
         <main>
             <section class="filter">
                 <h2 class="visually-hidden">Фильтры для поиска гостиницы</h2>
-                <form class="filter" action="https://echo.htmlacademy.ru" method="GET">
-                    <fieldset>
-                        <legend>Инфраструктура</legend>
+                <form class="filter-form" action="https://echo.htmlacademy.ru" method="GET">
+                    <fieldset class="filter-checkbox">
+                        <legend class="filter-checkbox-title">Инфраструктура:</legend>
                         <p class="filter-item">
-                            <input id="filter_pool" type="checkbox" name="pool" checked>
-                            <label for="filter_pool">Бассейн</label>
+                            <input class="filter-checkbox-input visually-hidden" id="filter_pool" type="checkbox" name="pool" checked>
+                            <label class="filter-checkbox-label" for="filter_pool">Бассейн</label>
                         </p>
                         <p class="filter-item">
-                            <input id="filter_parking" type="checkbox" name="parking">
-                            <label for="filter_parking">Парковка</label>
+                            <input class="filter-checkbox-input visually-hidden" id="filter_parking" type="checkbox" name="parking">
+                            <label class="filter-checkbox-label" for="filter_parking">Парковка</label>
                         </p>
                         <p class="filter-item">
-                            <input id="filter_wifi" type="checkbox" name="wifi">
-                            <label for="filter_wifi">WI-FI</label>
-                        </p>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Тип жилья:</legend>
-                        <p class="filter-item">
-                            <label for="filter_hotel">Гостиница</label>
-                            <input id="filter_hotel" type="checkbox" name="hotel">
-                        </p>
-                        <p class="filter-item">
-                            <label for="filter_motel">Модель</label>
-                            <input id="filter_motel" type="checkbox" name="motel">
-                        </p>
-                        <p class="filter-item">
-                            <label for="filter_apartments">Апартаменты</label>
-                            <input id="filter_apartments" type="checkbox" name="apartments">
+                            <input class="filter-checkbox-input visually-hidden" id="filter_wifi" type="checkbox" name="wifi">
+                            <label class="filter-checkbox-label" for="filter_wifi">WI-FI</label>
                         </p>
                     </fieldset>
-                    <fieldset>
-                        <legend class="filter-range-title">Стоимость в сутки (Р):</legend>
-                        <div class="price-controls">
-                            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-                            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
-                        </div>
-                        <div class="range-controls">
-                            <div class="scale">
-                                <div class="bar"></div>
+                    <fieldset class="filter-checkbox">
+                        <legend class="filter-checkbox-title">Тип жилья:</legend>
+                        <p class="filter-item">
+                            <input class="filter-checkbox-input visually-hidden" id="filter_hotel" type="checkbox" name="hotel" checked>
+                            <label class="filter-checkbox-label" for="filter_hotel">Гостиница</label>
+                        </p>
+                        <p class="filter-item">
+                            <input class="filter-checkbox-input visually-hidden" id="filter_motel" type="checkbox" name="motel" checked>
+                            <label class="filter-checkbox-label" for="filter_motel">Мотель</label>
+                        </p>
+                        <p class="filter-item">
+                            <input class="filter-checkbox-input visually-hidden" id="filter_apartments" type="checkbox" name="apartments" checked>
+                            <label class="filter-checkbox-label" for="filter_apartments">Апартаменты</label>
+                        </p>
+                    </fieldset>
+                    <div class="filter-range-wraper">
+                        <fieldset class="filter-range">
+                            <legend class="filter-range-title">Стоимость в сутки (Р):</legend>
+                            <div class="price-controls">
+                                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                            </div>
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div class="bar"></div>
+                                </div>
                                 <div class="range-toggle range-toggle-min"></div>
                                 <div class="range-toggle range-toggle-max"></div>
                             </div>
-                        </div>
-                    </fieldset>
-                    <button class="button btn-transparent" type="submit">Показать</button>
+                        </fieldset>
+                        <button class="button btn-transparent" type="submit">Показать</button>
+                    </div>
                 </form>
             </section>
             <section class="catalog">
