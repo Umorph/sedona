@@ -1,84 +1,36 @@
-/* .container {
-    background: rgba(50, 65, 182, 0.2);
-    box-shadow: inset 0 0 0 2px rgb(50, 65, 182);
+/* .filter-form {
+    background: rgba(234, 254, 30, 0.2);
+    box-shadow: inset 0 0 0 2px rgb(234, 254, 30);
 }
 
-.main-navigation {
-    background: rgba(234, 255, 45, 0.2);
-    box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+.filter-checkbox,
+.filter-range {
+    background: rgba(100, 254, 30, 0.2);
+    box-shadow: inset 0 0 0 2px rgb(100, 254, 30);
 }
 
-.main-logo {
-    background: rgba(100, 234, 45, 0.2);
-    box-shadow: inset 0 0 0 2px rgb(100, 234, 45);
+.filter-checkbox legend,
+.filter-range legend {
+    background: rgba(100, 154, 230, 0.2);
+    box-shadow: inset 0 0 0 2px rgb(100, 154, 230);
 }
 
-.site-navigation-list {
-    background: rgba(255, 45, 234, 0.2);
-    box-shadow: inset 0 0 0 2px rgb(255, 45, 234);
+.filter-checkbox label,
+.filter-range label {
+    background: rgba(200, 54, 230, 0.2);
+    box-shadow: inset 0 0 0 2px rgb(200, 54, 230);
 }
 
-.user-navigation-list {
-    background: rgba(45, 234, 255, 0.2);
-    box-shadow: inset 0 0 0 2px rgb(45, 234, 255);
+.filter-checkbox input,
+.filter-range input {
+    background: rgba(100, 254, 130, 0.2);
+    box-shadow: inset 0 0 0 2px rgb(100, 254, 130);
 }
 
-.page-title {
-    background: rgba(150, 150, 100, 0.2);
-    box-shadow: inset 0 0 0 2px rgb(150, 150, 100);
+.price-controls,
+.range-controls {
+    background: rgba(200, 54, 130, 0.2);
+    box-shadow: inset 0 0 0 2px rgb(200, 54, 130);
 }
 
-.filter {
-    background: rgba(234, 155, 45, 0.2);
-    box-shadow: inset 0 0 0 2px rgb(234, 155, 45);
-}
-
-.filter-item {
-    background: rgba(234, 255, 45, 0.2);
-    box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
-}
-
-.catalog {
-    background: rgba(100, 234, 45, 0.2);
-    box-shadow: inset 0 0 0 2px rgb(100, 234, 45);
-}
-
-.catalog-list {
-    background: rgba(150, 150, 100, 0.2);
-    box-shadow: inset 0 0 0 2px rgb(150, 150, 100);
-}
-
-.catalog-item {
-    background: rgba(255, 45, 234, 0.2);
-    box-shadow: inset 0 0 0 2px rgb(255, 45, 234);
-}
-
-.catalog-sort {
-    background: rgba(100, 234, 45, 0.2);
-    box-shadow: inset 0 0 0 2px rgb(100, 234, 45);
-}
-
-.sort-topic {
-    background: rgba(100, 10, 45, 0.2);
-    box-shadow: inset 0 0 0 2px rgb(100, 10, 45);
-}
-
-.sort-type-list {
-    background: rgba(10, 34, 45, 0.2);
-    box-shadow: inset 0 0 0 2px rgb(10, 34, 45);
-}
-
-.sort-direction-list {
-    background: rgba(10, 34, 150, 0.2);
-    box-shadow: inset 0 0 0 2px rgb(10, 34, 150);
-}
-
-.catalog-item-hover {
-    background: rgba(10, 34, 150, 0.2);
-    box-shadow: inset 0 0 0 2px rgb(150, 34, 150);
-}
-
-.pagination-item {
-    background: rgba(45, 234, 255, 0.2);
-    box-shadow: inset 0 0 0 2px rgb(45, 234, 255);
-} */
+ */
