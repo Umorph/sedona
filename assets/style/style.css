@@ -42,6 +42,12 @@ input[type="radio"].visually-hidden {
     overflow: hidden;
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 .button {
     font-weight: 700;
     line-height: 26px;
@@ -627,7 +633,7 @@ input[type="radio"].visually-hidden {
     background: #ffffff;
 }
 
-/* Catalog */
+/* Sort */
 
 .catalog-separator {
     margin: 0;
@@ -788,6 +794,159 @@ input[type="radio"].visually-hidden {
 
 .sort-direction-current path {
     fill: #81b3d2;
+}
+
+/* Catalog */
+
+.catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.catalog-item {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.item-description-wrapper {
+    display: flex;
+    margin: 29px 0px 33px 72px;
+}
+
+.item-description-text {
+    margin-left: 30px;
+}
+
+.item-description-text h3 {
+    margin: 0;
+    margin-top: -5px;
+    padding: 0;
+
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+
+    background-color: #fefefe ;
+}
+
+.hotel-price-type {
+    margin: 0;
+    margin-top: 7px;
+    margin-bottom: 14px;
+    padding: 0;
+}
+
+.hotel-price-type span {
+    display: block;
+    float: left;
+    min-width: 116px;
+}
+
+.item-description-text button {
+    margin: 0;
+    padding: 0;
+}
+
+.btn-details,
+.btn-book {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    cursor:  pointer;
+}
+
+.btn-details {
+    width: 110px;
+    height: 27px;
+
+    background-color: #81b3d2;
+}
+
+.btn-book {
+    width: 142px;
+    height: 27px;
+
+    background-color: #766357;
+}
+
+.rating-area-wrapper {
+    position: relative;
+    margin-right: 73px;
+    width: 111px;
+}
+
+.rating-area {
+    margin-top: 93px;
+    padding-top: 4px;
+    padding-left: 17px;
+    width: 94px;
+    height: 23px;
+
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #666666;
+
+    background-color: #f2f2f2;
+}
+
+.rating-area::before {
+    content: "";
+
+    position: absolute;
+    right: -7px;
+    top: 28px;
+
+    display: block;
+    width: 24px;
+    height: 17px;
+
+    background-image: url("../img/star.png");
+    background-repeat: repeat-x;
+    background-position: 0 0;
+}
+
+.rating-two-star::before {
+    width: 48px;
+}
+
+.rating-three-star::before {
+    width: 72px;
+}
+
+.rating-four-star::before {
+    width: 96px;
+}
+
+.rating-five-star::before {
+    width: 120px;
+}
+
+.catalog-item::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 1px;
+
+    background-color:#e5e5e5;
 }
 
 /* Modal */
