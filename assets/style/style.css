@@ -326,6 +326,18 @@ input[type="radio"].visually-hidden {
     margin: 0;
     margin-top: 47px;
     padding: 0;
+    
+    cursor: pointer;
+}
+
+.button-modal:hover,
+.button-modal:focus {
+    background-color: #604e43;
+}
+
+.button-modal:active {
+    background-color: #503e33;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .main-map img {
@@ -373,6 +385,19 @@ input[type="radio"].visually-hidden {
     background-color: #81b3d2;
 }
 
+.social-item:hover,
+.social-item:focus {
+    background-color: #669ec0;
+}
+
+.social-item:active {
+    background-color: #5496bd;
+}
+
+.social-item:active img {
+    opacity: 0.3;
+}
+
 .social-item a {
     position: relative;
 
@@ -401,11 +426,18 @@ input[type="radio"].visually-hidden {
     line-height: 26px;
 }
 
-.copyright-separator {
-    margin: 10px 5px 20px 5px;
+.copyright a {
+    width: 115px;
+    height: 40px;
+}
 
-    font-size: 40px;
-    line-height: 40px;
+.copyright:hover path,
+.copyright:focus path {
+    fill: #669ec0;
+}
+
+.copyright:active path {
+    fill: #bdbbbc;
 }
 
 /* filter */
@@ -835,7 +867,27 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase;
     color: #000000;
 
-    background-color: #fefefe ;
+    background-color: #fefefe;
+}
+
+.item-description-text a {
+    color: #000000;
+
+    background-color: #fefefe;
+}
+
+.item-description-text a:hover,
+.item-description-text a:focus {
+    color: #81b3d2;
+
+    background-color: #fefefe;
+}
+
+.item-description-text a:active {
+    color: #000000;
+    opacity: 0.3;
+
+    background-color: #fefefe;
 }
 
 .hotel-price-type {
@@ -874,11 +926,31 @@ input[type="radio"].visually-hidden {
     background-color: #81b3d2;
 }
 
+.btn-details:hover,
+.btn-details:focus {
+    background-color: #669ec0;
+}
+
+.btn-details:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd;
+}
+
 .btn-book {
     width: 142px;
     height: 27px;
 
     background-color: #766357;
+}
+
+.btn-book:hover,
+.btn-book:focus {
+    background-color: #604e43;
+}
+
+.btn-book:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #503e33;
 }
 
 .rating-area-wrapper {
