@@ -92,13 +92,44 @@
             <section class="main-map">
                 <div class="map-text-wrapper">
                     <h2>Заинтересовались?</h2>
-                    <p>
+                    <p class="map-text">
                         Укажите предполагаемые даты поездки,<br>
                         и мы покажем вам лучшие предложения гостиниц в седоне
                     </p>
                     <button class="button button-modal" type="button">Поиск гостиницы в седоне</button>
                 </div>
                 <img src="assets/img/map.jpg" width="1200" height="593" alt="Карта Седоны">
+                <div class="modal">
+                    <h2 class="visually-hidden">Найти подходящую гостиницу</h2>
+                    <form class="modal-form" action="https://echo.htmlacademy.ru" method="POST">
+                        <div class="input-wrapper input-date">
+                            <label for="income_date" class="label-income">Дата заезда:</label>
+                            <input id="income_date" class="input input-income" type="text" name="income-date" placeholder="24 апреля 2017">
+                        </div>
+                        <div class="input-wrapper input-date">
+                            <label for="outcome_date" class="label-outcome">Дата выезда:</label>
+                            <input id="outcome_date" class="input input-outcome" type="text" name="outcome-date" placeholder="4 июля 2017">
+                        </div>
+                        <div class="input-wrapper input-count">
+                            <label class="label-adults" for="adults_count">Взрослые:</label>
+                            <p class="count-controls-wrapper">
+                                <button class="count-button count-down" type="button"><span class="visually-hidden">Меньше</span></button>
+                                <input id="adults_count" class="count-number" type="text" name="adults-count" value="2">
+                                <button class="count-button count-up" type="button"><span class="visually-hidden">Больше</span></button>
+                            </p>
+                        </div>  
+                        <div class="input-wrapper input-count">
+                            <label class="label-child" for="child_count">Дети:</label>
+                            <p class="count-controls-wrapper">
+                                <button class="count-button count-down" type="button"><span class="visually-hidden">Меньше</span></button>
+                                <input id="child_count" class="count-number" type="text" name="children-count" value="0">
+                                <button class="count-button count-up" type="button"><span class="visually-hidden">Больше</span></button>
+                            </p>
+                        </div>
+                        <button class="button button-modal-submit" type="submit">Найти</button>  
+                    </form>
+
+                </div>
             </section>
         </main>
         <footer class="main-footer">
@@ -121,32 +152,6 @@
                 </a>
             </div>
         </footer>
-        <section class="modal">
-            <h2 class="visually-hidden">Найти подходящую гостиницу</h2>
-            <form class="modal-search" action="https://echo.htmlacademy.ru" method="POST">
-                <p class="modal-input">
-                    <label for="modal_income">Дата заезда:</label>
-                    <input id="modal_income" type="text" name="income" placeholder="24 апреля 2017">
-                </p>
-                <p class="modal-input">
-                    <label for="modal_outcome">Дата выезда:</label>
-                    <input id="modal_outcome" type="text" name="outcome" placeholder="4 июля 2017">
-                </p>
-                <p class="modal-input">
-                    <label for="modal_adults">Взрослые:</label>
-                    <button class="button-down" type="button">-</button>
-                    <input id="modal_adults" type="text" name="adults" value="0">
-                    <button class="button-up" type="button">+</button>
-                </p>
-                <p class="modal-input">
-                    <label for="modal_kids">Дети:</label>
-                    <button class="button-down" type="button">-</button>
-                    <input id="modal_kids" type="text" name="kids" value="0">
-                    <button class="button-up" type="button">+</button>
-                </p>
-                <button class="button" type="submit">Найти</button>
-            </form>
-        </section>
     </div>
 </body>
 </html>
