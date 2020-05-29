@@ -291,6 +291,10 @@ input[type="radio"].visually-hidden {
 
 /* main map */
 
+.main-map {
+    position: relative;
+}
+
 .map-text-wrapper {
     margin: 0 auto;
     padding: 0;
@@ -312,7 +316,7 @@ input[type="radio"].visually-hidden {
     background-color: #ffffff;
 }
 
-.main-map p {
+.map-text {
     margin: 0;
     margin-top: 24px;
     padding: 0;
@@ -1024,13 +1028,212 @@ input[type="radio"].visually-hidden {
 /* Modal */
 
 .modal {
-    display: none;
+    position: absolute;
+    top: 241px;
+    left: 315px;
+
+    display: block;
+    width: 570px;
+
+    background-color: #ffffff;
+
+    /* Временно для сетки */
+    min-height: 395px;
 }
 
-.modal-search label {
+.modal-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    margin-bottom: 29px;
+}
+
+.input-date {
+    width: 460px;
+}
+
+.input-wrapper:first-child {
+    margin-top: 55px;
+}
+
+.label-income,
+.label-outcome,
+.label-adults,
+.label-child {
+    flex-shrink: 0;
+    margin: 0;
+    margin-right: 10px;
+    padding: 0;
+    width: 100px;
+
+    font-size: 14px;
     font-weight: 700;
     line-height: 26px;
+    text-transform: uppercase;
     color: #000000;
 
     background-color: #ffffff;
+}
+
+.input-income,
+.input-outcome {
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    padding-left: 13px;
+    width: 334px;
+    min-height: 38px;
+
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.input-income:hover,
+.input-income:focus,
+.input-outcome:hover,
+.input-outcome:focus {
+    background-color: #ebebeb;
+}
+
+::-webkit-input-placeholder {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000000;
+
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+::-moz-placeholder {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000000;
+
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+:-moz-placeholder { /* Firefox 19+ */
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000000;
+
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+:-ms-input-placeholder { /* Firefox 18- */
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000000;
+
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+.label-child {
+    padding-left: 50px;
+    width: 55px;
+}
+
+.input-count {
+    width: 230px;
+    min-height: 39px;
+}
+
+.count-controls-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0;
+    margin-top: 4px;
+    margin-right: 3px;
+    padding: 0;
+    width: 114px;
+    height: 38px;
+}
+
+.count-button {
+    position: relative;
+
+    display: block;
+    flex-grow: 1;
+
+    border: none;
+    background-color: #f2f2f2;
+}
+
+.count-down::before {
+    content: "";
+
+    position: absolute;
+    top: 17px;
+    left: 12px;
+
+    display: block;
+    width: 12px;
+    height: 3px;
+
+    background-color: #a9a9a9;
+}
+
+.count-up::before {
+    content: "";
+
+    position: absolute;
+    top: 17px;
+    left: 12px;
+
+    display: block;
+    width: 11px;
+    height: 3px;
+
+    background-color: #a9a9a9;
+}
+
+.count-up::after {
+    content: "";
+
+    position: absolute;
+    top: 13px;
+    left: 16px;
+
+    display: block;
+    width: 3px;
+    height: 11px;
+
+    background-color: #a9a9a9;
+}
+
+.count-number {
+    flex-grow: 1;
+    width: 20px;
+
+    text-align: center;
+
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.button-modal-submit {
+    margin-top: 23px;
+    width: 459px;
+    min-height: 58px;
 }
